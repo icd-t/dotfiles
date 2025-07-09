@@ -1,0 +1,30 @@
+/* ROUNDED THEME FOR ROFI */
+/* Author: Newman Sanchez (https://github.com/newmanls) */
+
+* {
+    bg0:    #212121F2;
+    bg1:    #2A2A2A;
+    bg2:    #3D3D3D80;
+    bg3:    #616161F2;
+    fg0:    #E6E6E6;
+    fg1:    #FFFFFF;
+    fg2:    #969696;
+    fg3:    #3D3D3D;
+}
+
+@import "template/rounded-template.rasi"
+
+@theme "/nix/store/1f44g3f0g4xcnbhg1p56lmb5hmzw2w4h-rofi-1.7.9/share/rofi/themes/Arc-Dark.rasi"
+
+configuration {
+    show-icons: true;
+
+    display-ssh:    "󰣀 ssh:";
+    display-run:    "󱓞 run:";
+    display-drun:   "󰣖 drun:";
+    display-window: "󱂬 window:";
+    display-combi:  "󰕘 combi:";
+    display-filebrowser: "󰉋 filebrowser:";
+}
+
+@theme "~/.config/rofi/catppuccin-lavrent-mocha.rasi"
