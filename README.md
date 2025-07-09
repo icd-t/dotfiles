@@ -12,6 +12,7 @@ Includes configs for the following programs:
  - `fastfetch` - Fastfetch
  - `hypr` - Hyprland, Hyprland plugins, wallpapers
  - `kitty` - Kitty terminal emulator
+ - `lf` - LF file manager
  - `nixos` - NixOS system configurations including `configuration.nix`
  - `rofi` - Rofi program launcher
  - `waybar` - Waybar status bar
