@@ -117,6 +117,8 @@ in
     usbutils
     gnumake
     openssh
+    python313
+
 
     # Editors
     vim
@@ -139,6 +141,7 @@ in
     fd
     cava
     xclip
+    xsel
     wl-clipboard
     unzip
     unrar

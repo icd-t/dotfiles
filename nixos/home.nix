@@ -9,12 +9,13 @@ programs.zsh = {
 enable = true;
 shellAliases = {
 hm-test = " echo yes, home manager is installed";
-nurse = "sudo nixos-rebuild switch --flake /etc/nixos/#nix-top";
+nurse = "sudo nixos-rebuild switch --flake /home/icdt/dotfiles/nixos/#nix-top";
 stargaze = "astroterm --color --constellations --speed 1000 --fps 60 --city Memphis";
 fetch = "fastfetch";
 e = "emacsclient -c -a \"\" -t";
-e-nix = " e /sudo::/etc/nixos/configuration.nix";
-e-home = "e /sudo::/etc/nixos/home.nix";
+e-nix = " e /sudo::/home/icdt/dotfiles/nixos/configuration.nix";
+e-home = "e /sudo::/home/icdt/dotfiles/nixos/home.nix";
+e-flake = "e /sudo::/home/icdt/dotfiles/nixos/flake.nix";
 l = "exa -alh --no-user --icons --no-permissions";
 };
 };
