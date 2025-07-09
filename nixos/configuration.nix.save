@@ -1,0 +1,119 @@
+# Edit this configuration file to# Edit this configuration file to define what s>
+# your system.  Help is available in the config>
+# and in the NixOS manual (accessible by runnin>
+
+{ config, pkgs, ... }:
+let
+  home-manager = builtins.fetchTarball "https:/>
+in
+{
+  imports =
+    [ # Include the results of the hardware sca>
+      ./hardware-configuration.nix
+      (import "${home-manager}/nixos")
+      # <catppuccin/modules/home-manager>
+    ];
+
+# Config Home Manager
+home-manager.useUserPackages = true;
+home-manager.useGlobalPkgs = true;
+home-manager.backupFileExtension = "backup";
+home-manager.users.icdt = import ./home.nix;
+               [ Read 213 lines ]
+# Edit this configuration file to define what should be installed on
+# your system.  Help is available in the configuration.nix(5) man page
+# and in the NixOS manual (accessible by running ‘nixos-help’).
+
+{ config, pkgs, ... }:
+let
+  home-manager = builtins.fetchTarball "https://github.com/nix-community/home-manager/archive/releas>
+in
+{
+  imports =
+    [ # Include the results of the hardware scan.
+      ./hardware-configuration.nix
+      (import "${home-manager}/nixos")
+      # <catppuccin/modules/home-manager>
+    ];
+
+# Config Home Manager
+home-manager.useUserPackages = true;
+home-manager.useGlobalPkgs = true;
+home-manager.backupFileExtension = "backup";
+home-manager.users.icdt = import ./home.nix;
+
+  # Bootloader.
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true; define what s>
+# your system.  Help is available in the config>
+# and in the NixOS manual (accessible by runnin>
+
+{ config, pkgs, ... }:
+let
+  home-manager = builtins.fetchTarball "https:/>
+in
+{
+  imports =
+    [ # Include the results of the hardware sca>
+      ./hardware-configuration.nix
+      (import "${home-manager}/nixos")
+      # <catppuccin/modules/home-manager>
+    ];
+
+# Config Home Manager
+home-manager.useUserPackages = true;
+home-manager.useGlobalPkgs = true;
+home-manager.backupFileExtension = "backup";
+home-manager.users.icdt = import ./home.nix;
+               [ Read 213 lines ]
+# Edit this configuration file to define what should be installed on
+# your system.  Help is available in the configuration.nix(5) man page
+# and in the NixOS manual (accessible by running ‘nixos-help’).
+
+{ config, pkgs, ... }:
+let
+  home-manager = builtins.fetchTarball "https://github.com/nix-community/home-manager/archive/release-25.05.tar.gz";
+in
+{
+  imports =
+    [ # Include the results of the hardware scan.
+      ./hardware-configuration.nix
+      (import "${home-manager}/nixos")
+      # <catppuccin/modules/home-manager>
+    ];
+
+# Config Home Manager
+home-manager.useUserPackages = true;
+home-manager.useGlobalPkgs = true;
+home-manager.backupFileExtension = "backup";
+home-manager.users.icdt = import ./home.nix;
+
+  # Bootloader.
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
+
+  # Enable Nix Flakes
+  nix.settings.experimental-features = ["nix-command" "flakes"];
+
+  networking.hostName = "nix-top"; # Define your hostname.
+  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+
+# Latest kernel packages
+boot.kernelPackages = pkgs.linuxPackages_latest;
+
+  # Configure network proxy if necessary
+  # networking.proxy.default = "http://user:password@proxy:port/";
+  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
+
+  # Enable networking
+  networking.networkmanager.enable = true;
+
+  # Set your time zone.
+  time.timeZone = "America/Chicago";
+
+  # Select internationalisation properties.
+  i18n.defaultLocale = "en_US.UTF-8";
+
+  i18n.extraLocaleSettings = {
+    LC_ADDRESS = "en_US.UTF-8";
+
