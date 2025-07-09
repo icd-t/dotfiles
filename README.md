@@ -1,6 +1,6 @@
 # Dotfiles
 
-![Example screenshot](https://github.com/icd-t/dotfiles/blob/main/image.png)
+![Example screenshot](https://github.com/icd-t/dotfiles/example.png)
 
 A repository of the main configuration files I use on my NixOS machine.
 
