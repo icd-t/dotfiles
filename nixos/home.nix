@@ -17,6 +17,7 @@ e-nix = " e /sudo::/home/icdt/dotfiles/nixos/configuration.nix";
 e-home = "e /sudo::/home/icdt/dotfiles/nixos/home.nix";
 e-flake = "e /sudo::/home/icdt/dotfiles/nixos/flake.nix";
 l = "exa -alh --no-user --icons --no-permissions";
+ff = "fastfetch";
 };
 initExtra = ''
   eval "$(oh-my-posh init zsh --config /home/icdt/dotfiles/shell/theme.omp.yaml)"

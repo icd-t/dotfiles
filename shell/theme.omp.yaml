@@ -15,15 +15,18 @@ blocks:
     force: true
     segments:
       - type: text
+        style: plain
+        template: "\n"
+      - type: text
         style: diamond
         leading_diamond: ""
-        trailing_daimond: " "
+        trailing_diamond: ""
         foreground: white
         background: black
-        template: "{{ .UserName }}"
+        template: " {{ .UserName }} "
       - type: path
         style: diamond
-        leading_diamond: " "
+        leading_diamond: ""
         trailing_diamond: ""
         foreground: black
         background: blue

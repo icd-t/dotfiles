@@ -5,31 +5,56 @@
 	  "height":18
   },
   "display": {
-	 "separator": " // "
+	  "separator": "  ",
+    "color": {
+      "keys": "magenta",
+      "separator": "90"
+    },
   },
   "modules": [
-    "title",
+    "break",
+    "break",
+    {
+      "type": "custom",
+      "format": "{#34}{#}{#bright_inverse_34} icdt {#}{#34}{#}{#36}{#}{#bright_inverse_36} nix-top {#}{#36}{#}"
+    },
     "break",
     {
 	    "type": "custom",
-	    "format": "==/=/========================"
+	    "format": "{#90}==/=/=========================={#}"
     }, 
     "break",
-
-    "os",
-    "host",
-    "uptime",
-    "wm",
-    "terminal",
-    "cpu",
-    "gpu",
+    {
+      "type": "os",
+      "key": "{#blue} {#} {#bright_cyan}OSYS{#}"
+    },
+    {
+      "type": "host",
+      "key": "{#blue}󰨇 {#} {#bright_cyan}HOST{#}"
+    },
+    {
+      "type": "uptime",
+      "key": "{#blue} {#} {#bright_cyan}UPTM{#}"
+    },
+    {
+      "type": "wm",
+      "key": "{#blue} {#} {#bright_cyan}WMAN{#}"
+    },
+    {
+      "type": "terminal",
+      "key": "{#blue} {#} {#bright_cyan}TERM{#}"
+    },
 
     "break",
     {
 	    "type": "custom",
-	    "format": "==/=/========================"
+	    "format": "{#90}==/=/=========================={#}"
     }, 
     "break",
-    "colors"
+
+    {
+      "type": "custom",
+      "format": "{#30}█{#} {#31}█{#} {#32}█{#} {#33}█{#} {#34}█{#} {#35}█{#} {#36}█{#} {#37}█{#}"
+    }
   ]
 }
