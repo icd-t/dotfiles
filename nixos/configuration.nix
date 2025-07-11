@@ -155,6 +155,7 @@ in
     chafa
     pistol
     gh
+    oh-my-posh
 
     # Desktop Environment
     hyprland

@@ -18,6 +18,9 @@ e-home = "e /sudo::/home/icdt/dotfiles/nixos/home.nix";
 e-flake = "e /sudo::/home/icdt/dotfiles/nixos/flake.nix";
 l = "exa -alh --no-user --icons --no-permissions";
 };
+initExtra = ''
+  eval "$(oh-my-posh init zsh --config /home/icdt/dotfiles/shell/theme.omp.yaml)"
+'';
 };
 
 home.packages = with pkgs; [
