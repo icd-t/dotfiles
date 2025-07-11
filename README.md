@@ -1,6 +1,7 @@
 # Dotfiles
 
 ![Example screenshot](https://github.com/icd-t/dotfiles/blob/main/example.png)
+![Example screenshot](https://github.com/icd-t/dotfiles/blob/main/example2.png)
 
 A repository of the main configuration files I use on my NixOS machine.
 
@@ -9,7 +10,7 @@ A repository of the main configuration files I use on my NixOS machine.
 Includes configs for the following programs:
 
  - `doom` - Doom Emacs
- - `fastfetch` - Fastfetch
+ - `fastfetch` - My custom Fastfetch theme
  - `hypr` - Hyprland, Hyprland plugins, wallpapers
  - `kitty` - Kitty terminal emulator
  - `lf` - LF file manager
@@ -24,4 +25,4 @@ Extra things you can add to your system to make it look a little nicer. These ar
 
  - Add a Catppuccin theme to Firefox with this  [theme](https://addons.mozilla.org/en-US/firefox/addon/catppuccin-mocha-red/) by Lexi.
  - Convert any image to a specific theme you want with [Wallpaper Theme Converter](https://addons.mozilla.org/en-US/firefox/addon/catppuccin-mocha-red/). Some of the wallpapers in `hypr/wp/mocha` are my own photos that have been converted with this tool. The other wallpapers came from [this](https://github.com/orangci/walls-catppuccin-mocha) repo by orangci.
-  - Add your username to the user map in `shell/theme.omp.yaml`
+  - Some variables are hard-coded because I am lazy. You should replace my user name with yours in the files `shell/theme.omp.yaml`, and `fastfetch/config.jsonc`.
