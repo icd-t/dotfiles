@@ -94,8 +94,6 @@ in
 
   # List packages installed in system profile. To search, run:
   environment.systemPackages = with pkgs; [
-
-    # System
     npins
     blueman
     bluez
@@ -118,14 +116,9 @@ in
     gnumake
     openssh
     python313
-
-
-    # Editors
     vim
     emacs
     emacsPackages.gtk-variant
-
-    # Terminal
     kitty
     git
     fastfetch
@@ -156,8 +149,6 @@ in
     pistol
     gh
     oh-my-posh
-
-    # Desktop Environment
     hyprland
     waybar
     hyprpaper
@@ -170,19 +161,12 @@ in
     libsForQt5.full
     hyprshot
     pyprland
-    # quickshell.packages.${pkgs.system}.default
     exiftool
-
-    # Web
     firefox
-
-    # Video Games
     steam
     parsec-bin
     ryujinx
     lutris
-
-    # Other Applications
     pkgs.libsForQt5.dolphin
     orca-c
     rawtherapee
@@ -193,6 +177,8 @@ in
     wkhtmltopdf
     file
     p7zip
+    mpv
+    ffmpeg
   ];
 
   # Fonts
