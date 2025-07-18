@@ -41,7 +41,7 @@ in
   networking.hostName = "nix-top"; # Define your hostname.
 
   # Kernel Config
-  boot.kernelPackages = lib.mkForce pkgs.linuxPackages_latest;
+  boot.kernelPackages = lib.mkForce pkgs.linuxPackages-rt_latest;
   boot.kernelParams = [ "preempt=full" ];
   #boot.kernelPatches = lib.mkForce [
   #  {
@@ -179,6 +179,7 @@ in
     p7zip
     mpv
     ffmpeg
+    imagemagick
   ];
 
   # Fonts
@@ -296,4 +297,7 @@ hardware.bluetooth = {
   # SSH Support
   programs.ssh.startAgent = true;
   services.openssh.enable = true;
+
+  # Theme
+  stylix.base16Scheme = "/home/icdt/dotfiles/themes/teaway16.yaml";
 }

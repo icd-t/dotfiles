@@ -9,6 +9,7 @@
       url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    stylix.url = "github:danth/stylix";
   };
 
   outputs = inputs: rec {
@@ -18,6 +19,7 @@
           modules = [
             inputs.musnix.nixosModules.musnix
             ./configuration.nix
+            inputs.stylix.nixosModules.stylix
           ];
           specialArgs = { inherit inputs; }; # Pass quickshell to your modules
         };
