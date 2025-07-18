@@ -1,0 +1,119 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+	  "source": "~/.config/fastfetch/nixos_custom_cat.png",
+	  "height":14
+
+  },
+  "display": {
+	  "separator": "  ",
+    "color": {
+      "keys": "magenta",
+      "separator": "90"
+    }
+  },
+  "modules": [
+    {
+      "type": "custom",
+      "format": "{#34}{#}{#bright_inverse_34} 󰫆 {$USER} {#}{#34}{#}{#36}{#}{#bright_inverse_36} nix-top {#}{#36}{#}"
+    },
+    "break",
+    {
+      "type": "datetime",
+      "key": "{#blue} {#} {#bright_cyan}TIME{#}",
+      "format": "{year}-{month-pretty}-{day-pretty} {hour-pretty}:{minute-pretty}:{second-pretty} {timezone-name}"
+    },
+    "break",
+    {
+	    "type": "custom",
+	    "format": "{#90}==/=/=========================={#}"
+    }, 
+    "break",
+    {
+      "type": "os",
+      "key": "{#blue} {#} {#bright_cyan}OSYS{#}",
+      "format": "{name} {version-id}"
+    },
+    {
+      "type": "host",
+      "key": "{#blue}󰨇 {#} {#bright_cyan}HOST{#}"
+    },
+    {
+      "type": "uptime",
+      "key": "{#blue} {#} {#bright_cyan}UPTM{#}",
+      "format": "{hours} hours {minutes} minutes"
+    },
+    {
+      "type": "wm",
+      "key": "{#blue} {#} {#bright_cyan}WMAN{#}",
+      "format": "{pretty-name} {version}"
+    },
+    {
+      "type": "terminal",
+      "key": "{#blue} {#} {#bright_cyan}TERM{#}"
+    },
+    {
+      "type": "shell",
+      "key": "{#blue} {#} {#bright_cyan}SHLL{#}"
+    },
+
+    "break",
+    {
+	    "type": "custom",
+	    "format": "{#90}==/=/=========================={#}"
+    }, 
+    "break",
+
+    {
+      "type": "display",
+      "key": "{#blue}󰍹 {#} {#bright_cyan}DISP{#}",
+      "format": "{height}p {refresh-rate}Hz"
+    },
+    {
+      "type": "cpu",
+      "key": "{#blue} {#} {#bright_cyan}PCPU{#}",
+      "format": "{name}"
+    },
+    {
+      "type": "gpu",
+      "key": "{#blue} {#} {#bright_cyan}PGPU{#}",
+      "format": "{name}"
+    },
+    {
+      "type": "disk",
+      "key": "{#blue} {#} {#bright_cyan}DISK{#}",
+      "format": "{size-total} ({size-percentage} used)"
+    },
+    {
+      "type": "memory",
+      "key": "{#blue} {#} {#bright_cyan}MEMM{#}",
+      "format": "{total} ({percentage} used)"
+    },
+    {
+      "type": "battery",
+      "key": "{#blue} {#} {#bright_cyan}BATT{#}"
+    },
+    {
+      "type": "wifi",
+      "key": "{#blue}󰖩 {#} {#bright_cyan}WIFI{#}",
+      "format": "{ssid} ({signal-quality})"
+    },
+
+    "break",
+    {
+	    "type": "custom",
+	    "format": "{#90}==/=/=========================={#}"
+    },
+    "break",
+
+    {
+      "type": "custom",
+      "format": "{#30}█{#} {#31}█{#} {#32}█{#} {#33}█{#} {#34}█{#} {#35}█{#} {#36}█{#} {#37}█{#}"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "{#90}█{#} {#91}█{#} {#92}█{#} {#93}█{#} {#94}█{#} {#95}█{#} {#96}█{#} {#97}█{#}"
+    }
+  ]
+}
