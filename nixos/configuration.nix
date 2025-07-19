@@ -180,6 +180,7 @@ in
     mpv
     ffmpeg
     imagemagick
+    zoxide
   ];
 
   # Fonts

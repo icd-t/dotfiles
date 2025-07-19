@@ -7,6 +7,8 @@ home.stateVersion = "25.05";
 
 programs.zsh = {
 enable = true;
+enableAutosuggestions = true;
+syntaxHighlighting.enable = true;
 shellAliases = {
 hm-test = " echo yes, home manager is installed";
 nurse = "sudo nixos-rebuild switch --flake /home/icdt/dotfiles/nixos/#nix-top";
@@ -21,6 +23,7 @@ ff = "fastfetch -c /home/icdt/dotfiles/fastfetch/config-full.jsonc";
 };
 initExtra = ''
   eval "$(oh-my-posh init zsh --config /home/icdt/dotfiles/shell/theme.omp.yaml)"
+  eval "$(zoxide init zsh)"
 '';
 };
 
