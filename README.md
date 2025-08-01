@@ -1,7 +1,8 @@
 # Dotfiles
 
 ![Example screenshot](https://github.com/icd-t/dotfiles/blob/main/example.png)
-![Example screenshot](https://github.com/icd-t/dotfiles/blob/main/example3.webp)
+![Example screenshot](https://github.com/icd-t/dotfiles/blob/main/example2.png)
+![Example screenshot](https://github.com/icd-t/dotfiles/blob/main/example3.png)
 
 A repository of the main configuration files I use on my NixOS machine.
 
@@ -9,6 +10,7 @@ A repository of the main configuration files I use on my NixOS machine.
 
 Includes configs for the following programs:
 
+ - `aseprite` - Aseprite pixel art editor
  - `doom` - Doom Emacs
  - `fastfetch` - My custom Fastfetch theme
  - `hypr` - Hyprland, Hyprland plugins, wallpapers

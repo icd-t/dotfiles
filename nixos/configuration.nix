@@ -163,7 +163,6 @@ in
     pyprland
     exiftool
     firefox
-    steam
     parsec-bin
     ryujinx
     lutris
@@ -181,6 +180,10 @@ in
     ffmpeg
     imagemagick
     zoxide
+    aseprite
+    skia-aseprite
+    steam
+    bat
   ];
 
   # Fonts
@@ -301,4 +304,7 @@ hardware.bluetooth = {
 
   # Theme
   stylix.base16Scheme = "/home/icdt/dotfiles/themes/teaway16.yaml";
+
+  # Steam
+  programs.steam.enable = true;
 }
