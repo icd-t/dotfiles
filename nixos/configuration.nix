@@ -307,4 +307,8 @@ hardware.bluetooth = {
 
   # Steam
   programs.steam.enable = true;
+
+  # Parsec
+  networking.firewall.allowedTCPPorts = [ 443 ];
+  networking.firewall.allowedUDPPorts = [ 3478 ];
 }
