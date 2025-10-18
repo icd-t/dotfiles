@@ -184,6 +184,9 @@ in
     skia-aseprite
     steam
     bat
+    tor
+    tor-browser
+    vscode
   ];
 
   # Fonts
