@@ -35,7 +35,7 @@
     },
     "clock": {
         "interval": 1,
-        "format": "󰥔  {:%Y-%m-%d %H:%M:%S}",
+        "format": "󰥔 {:%Y-%m-%d %H:%M:%S}",
         "tooltip-format": "{calendar}",
     },
     "battery": {
@@ -44,13 +44,13 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{icon}  {capacity}%",
+        "format": "{icon} {capacity}%",
         "format-charging": "{capacity}% 󱐋",
         "format-plugged": "{capacity}% ",
         "format-icons": [" ", " ", " ", " ", " "]
     },
     "network": {
-        "format-wifi": "   {essid} ({signalStrength}%)",
+        "format-wifi": "󰖩 {essid}·{signalStrength}%",
         "format-ethernet": " {ipaddr}/{cidr}",
         "tooltip-format": "{ifname} via {gwaddr}",
         "format-linked": "{ifname} (No IP)",
@@ -58,13 +58,13 @@
     },
     "pulseaudio": {
         "scroll-step": 1,
-        "format": "   {volume}%",
+        "format": "  {volume}%",
         "on-click": "pavucontrol"
     },
     "bluetooth": {
         "format": " {status}",
         "format-connected": " {device_alias}",
-        "format-connected-battery": "  {device_alias} ({device_battery_percentage}%)",
+        "format-connected-battery": " {device_alias}·{device_battery_percentage}%",
         "on-click": "blueman-manager"
     }
 }

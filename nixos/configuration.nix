@@ -187,6 +187,12 @@ in
     tor
     tor-browser
     vscode
+    libgcc
+    gdb
+    wlr-randr
+    ddcutil
+    i2c-tools
+    brightnessctl
   ];
 
   # Fonts
