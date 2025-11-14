@@ -193,6 +193,7 @@ in
     ddcutil
     i2c-tools
     brightnessctl
+    vmware-workstation
   ];
 
   # Fonts
