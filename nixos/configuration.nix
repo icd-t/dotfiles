@@ -124,6 +124,7 @@ in
     fastfetch
     wget
     htop
+    btop
     cmatrix
     pipes
     zsh
@@ -167,6 +168,7 @@ in
     ryujinx
     lutris
     pkgs.libsForQt5.dolphin
+    nautilus
     orca-c
     rawtherapee
     vlc
